@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            body {
+                display: inline-block;
+            }
+            h1 {
+                text-align: center;
+                color:crimson;
+                background-color: antiquewhite;
+            }
+            p {
+                text-align: center;
+                font-style:italic;
+                font-weight: bolder;
+                font-size: large;
+                color: crimson;
+                }
+            form {
+                background-color: antiquewhite;
+                
+            }
+            button {
+
+                background-color: orange;
+            }
+
+        </style>
+
+    
+    </head><br>
+    <body>
+        <h1>Book a Call</h1> <br>
+        <p style="background-color:bisque; height:30px" > Book a call slot and our representive will call you within 1hr of selected time </p> <br>
+        <form onsubmit="saveToLocalStorage(event)">
+            <label> Name</label><br>
+            <input id ="username" type="text" name="username"  required/><br>
+            <label> EmailId</label><br>
+            <input id="email" type="email" name="emailId"  required/><br>
+            <label> Phone Number</label><br>
+            <input id="phonenumber" type="tel" name="phonenumber" /><br><br>
+            <button> Submit </button
+        </form><br>
+        <ul id='listOfUsers'></ul>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0/axios.min.js"></script> -->
+        <script src="BookingApp.js"></script>
+
+    </body>
+</html>
